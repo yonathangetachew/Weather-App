@@ -1,11 +1,11 @@
 // WEATHER APP
-// These are the packages we will use for our application
+// THESE ARE THE PACKAGES WE WILL USE FOR OUR APPLICATION!!!!
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const https = require("https");
 
-// here we created our route for URL to Page.html
+// Here we created our route for URL to Page.html
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/page.html");
